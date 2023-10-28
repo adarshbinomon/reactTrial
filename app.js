@@ -8,7 +8,15 @@ const heading1 = (
     </h1>
 )
 
+const FunctionalComponent = ()=> (
+    <div>
+    {heading1}
+  <h1>FunctionalComponent</h1>
+  <h2>this is an h2 tag</h2>
+  </div>
+)
+
 console.log(heading);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(heading);
+root.render(<FunctionalComponent />);
